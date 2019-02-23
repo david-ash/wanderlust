@@ -8,6 +8,7 @@ const db = require('./database/db');
 
 //Importing Function
 const signin = require('./controllers/signin');
+const register = require('./controllers/register');
 //console.log();
 
 
@@ -24,9 +25,12 @@ app.use(bodyParser.json());
 // Route for the signin
 app.get('/signin', (req, res) => {
     signin(req, res);
-   // console.log(res);
 });
 
+//Route for registration
+app.post('/register', (req, res) => {
+    register(req, res);
+});
 
 //Listening to the port
 app.listen(9874, () => {

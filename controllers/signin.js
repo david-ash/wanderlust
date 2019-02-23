@@ -3,9 +3,9 @@ const db = require('../database/db');
 
 const signin = (req, res) => {
     let flag = 1
-    const { name, password } = req.body;
+    const { email, password } = req.body;
     db.forEach((user) => {
-        if (user.name === name && user.password === password) {    
+        if (user.email === email && user.password === password) {    
             
             flag = 0;
             res.status(200).json(`Successfully login ${user.name}`);
