@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 
 // Route for the signin
-app.get('/signin', (req, res) => {
+app.post('/signin', (req, res) => {
     signin(req, res);
 });
 
