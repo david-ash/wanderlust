@@ -11,6 +11,9 @@ const signin = require('./controllers/signin');
 const register = require('./controllers/register');
 //console.log();
 
+//Importing app of railway for furthur routing
+const railway = require('./controllers/railway');
+
 
 //Creating an app
 const app = express();
@@ -31,6 +34,9 @@ app.post('/signin', (req, res) => {
 app.post('/register', (req, res) => {
     register(req, res);
 });
+
+//for railway
+app.use('/railway', railway);
 
 //Listening to the port
 app.listen(9874, () => {
