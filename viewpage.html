@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+        <!-- navbar -->
+      
+        <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+                <a href="#" class="navbar-brand text-light text-uppercase"><span class="h2 font-weight-bold">photo</span><span class="h1">X</span></a>
+                <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  <div class="bg-light line1"></div>
+                  <div class="bg-light line2"></div>
+                  <div class="bg-light line3"></div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="#sectionHome" class="nav-link m-2 menu-item nav-active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionMission" class="nav-link m-2 menu-item">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionCollection" class="nav-link m-2 menu-item">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionGallery" class="nav-link m-2 menu-item">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionCustomers" class="nav-link m-2 menu-item">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionPricing" class="nav-link m-2 menu-item">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sectionContact" class="nav-link m-2 menu-item">Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <div class="container text-black topmarg">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <p class="lead">Loaction</p>
+                          <div class="list-group">
+                              <li class="list-group-item active">Info 1</li>
+                              <li class="list-group-item">Info 2</li>
+                              <li class="list-group-item">Info 3</li>
+                          </div>
+                          <div id="map"></div>
+                      </div>
+                      <div class="col-md-9">
+                          <div class="img-thumbnail">
+                              <img class="img-responsive" src="https://images.unsplash.com/photo-1511843511279-cfd764c09659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%">
+                              <div class="caption-full">
+                                  <h4 class="pull-right">$9.00/night</h4>
+                                  <h4><a>XVZ</a></h4>
+                                  <p>XYZ desc</p>
+                                  <p>
+                                      <em>Submitted by: <a href="#">ABC</a></em>
+                                  </p>
+                                      <a class="btn btn-xs btn-warning" href="#">Edit</a>
+                                      <form id="delete-form">
+                                          <button class="btn btn-xs btn-danger">Delete</button>
+                                      </form>
+                              </div>
+                          </div>
+                          <div class=" container well text-light">
+                              <div class="text-right">
+                                  <a class="btn btn-success" href="#">Add New Comment</a>
+                              </div>
+                              <hr>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <strong>XYZ</strong>
+                                          <span class="pull-right">10 days ago</span>
+                                          <p>
+                                              adasdsadasd
+                                          </p>
+                                                
+                                          <a class="btn btn-xs btn-warning" 
+                                             href="#">Edit</a>
+                                          <form id="delete-form">
+                                              <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+                                          </form>
+                                      </div>
+                                  </div>
+                             
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
